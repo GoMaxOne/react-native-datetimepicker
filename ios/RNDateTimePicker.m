@@ -24,6 +24,7 @@
   if ((self = [super initWithFrame:frame])) {
     [self addTarget:self action:@selector(didChange)
                forControlEvents:UIControlEventValueChanged];
+    [self setValue:[UIColor whiteColor] forKey:@"textColor"];
     _reactMinuteInterval = 1;
   }
   return self;
